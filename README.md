@@ -1,11 +1,9 @@
 # Entrega de examen CORE 2020
 
 Esta entrega sigue un esquema similar al resto de entregas de la asignatura.
-
 La principal diferencia es que cada alumno tendrá un enunciado diferente.
-Para ello, el instalador (`npm install`) le pedirá su dirección de correo UPM, y automáticamente generará un enunciado personalizado.
 
-Tras las instalación, el enunciado estará disponible en `Enunciado.pdf`.
+Siga los siguientes pasos para obtener el enunciado y realizar la entrega.
 
 
 ## Pre-requisitos
