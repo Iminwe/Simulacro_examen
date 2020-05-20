@@ -5,23 +5,35 @@ Esta entrega sigue un esquema similar al resto de entregas de la asignatura.
 La principal diferencia es que cada alumno tendrá un enunciado diferente.
 Para ello, el instalador (`npm install`) le pedirá su dirección de correo UPM, y automáticamente generará un enunciado personalizado.
 
-Tras las instalación (ver [](#Preparación)), el enunciado estará disponible en `Enunciado.md`.
+Tras las instalación, el enunciado estará disponible en `Enunciado.pdf`.
+
+
+## Pre-requisitos
+
+Es necesario tener node.js, npm, y Git instalados, además del paquete autocorector.
 
 
 ## Paso 1
 
-Para hacer el examen, el alumno debe clonar el repositorio `Entrega_examen` desde la siquiente URL:
+Para hacer el examen, el alumno debe clonar el repositorio `Simulacro_examen` desde la siquiente URL:
 
-     https://github.com/CORE-2020/Entrega_examen
+     https://github.com/CORE-2020/Simulacro_examen
 
 Este repositorio contiene un autocorector del examen y una versión del proyecto Quiz 2020.
 
 
+Para clonar el repositorio, puede utilizar el siguiente comando:
+
+```
+git clone https://github.com/CORE-2020/Simulacro_examen
+```
+
+
 ## Paso 2
 
-Una vez descargada la entrega, ha de instalar las dependencias necesarias para el autocorector. Para ello debe ejecutar los comandos:
+Una vez clonado el repositorio, ha de instalar las dependencias necesarias para el autocorector. Para ello debe ejecutar los comandos:
 
-    cd Entrega_examen
+    cd Simulacro_examen
     npm install
 
 
