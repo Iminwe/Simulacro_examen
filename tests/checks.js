@@ -308,8 +308,17 @@ Cuando preguntes en el foro, asegúrate de incluir esa información para que pod
         });
 
         soloPara(["Simulacro-1"], function() {
-            comprueba(`La página principal incluye un enlace para ${config.middlewareName} si estás logueado`,
-                      10,
+            comprueba(`La página principal incluye un enlace para ${config.middlewareName}`,
+                      5,
+                      async function(){ 
+                          await browser.visit("/");
+                          browser.assert.status(200);
+                          this.msg_err = `No se encuentra en enlace a ${config.requestPath}`;
+                          browser.assert.text(`a[href="${config.requestPath}"]`, config.middlewareName);
+                      });
+
+            comprueba(`La página ${config.middlewareName} muestra el texto adecuado`,
+                      5,
                       async function(){ 
                           await browser.visit(config.requestPath);
                           browser.assert.status(200);
