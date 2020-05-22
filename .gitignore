@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+.idea
+*.sqlite
+.env
+Enunciado.md
+datos-usuario
+data
+.*
+user.json
+Enunciado.pdf
