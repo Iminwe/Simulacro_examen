@@ -80,8 +80,6 @@ function soloPara(filtro, func) {
     }
 }
 
-console.log('Modelo actual:', modelo);
-
 function comprueba(msg, score, func) {
     msg = `${num_tests}: ${msg}`;
     num_tests++;
@@ -263,7 +261,7 @@ Cuando preguntes en el foro, asegúrate de incluir esa información para que pod
 
                 let bin_path = path.join(path_assignment, "bin", "www");
 
-		    console.log(`Usando la base de datos ${db_file}`);
+                log(`Usando la base de datos ${db_file}`);
                 err = `Parece que no se puede lanzar el servidor con el comando "node ${bin_path}".`;
                 server = spawn('node', [bin_path], {env: {PORT: TEST_PORT,
                                                           DATABASE_URL: `sqlite://${path.relative(process.cwd(), db_file)}`,
@@ -296,7 +294,7 @@ Cuando preguntes en el foro, asegúrate de incluir esa información para que pod
                 browser.assert.status(200);
 
             } catch(e) {
-                console.log('Error en setup: ', err);
+                console.log('Error en setup: ', this.msg_err);
                 console.log();
                 console.log('Este es un error crítico, así que no podemos realizar el resto de tests.');
                 console.log();
