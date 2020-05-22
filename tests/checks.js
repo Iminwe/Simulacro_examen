@@ -313,13 +313,11 @@ Cuando preguntes en el foro, asegúrate de incluir esa información para que pod
             comprueba(`La página principal incluye un enlace para ${config.middlewareName} si estás logueado`,
                       10,
                       async function(){ 
-                          await browser.visit("/");
+                          await browser.visit(config.requestPath);
                           browser.assert.status(200);
-                          await asUser('pepe', async function() {
-                              this.msg_err = "No se muestra enlace para el Total";
-                              browser.assert.elements(`a[href="${config.requestPath}"]`, 1);
-                          });
-
+                          this.msg_err = "No se encuentra el titulo ${config.middlewareName}";
+                          browser.assert.text('h3', config.viewTitle);
+                          browser.assert.text('p', `Me encanta ${config.viewContent}`);
                       });
         });
     });
