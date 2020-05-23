@@ -294,7 +294,7 @@ Cuando preguntes en el foro, asegúrate de incluir esa información para que pod
                 browser.assert.status(200);
 
             } catch(e) {
-                console.log('Error en setup: ', this.msg_err);
+                console.log('Error en setup: ', err);
                 console.log();
                 console.log('Este es un error crítico, así que no podemos realizar el resto de tests.');
                 console.log();
