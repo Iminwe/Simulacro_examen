@@ -89,7 +89,13 @@ function prepare(email) {
     // Ahora usamos user.json, así que este paso no es necesario
     // await writeFile(user_data(), email);
 
-    fs.writeFileSync(path.join(path_assignment, 'Enunciado.pdf'), model.enunciado);
+    try{
+        fs.writeFileSync(path.join(path_assignment, 'Enunciado.pdf'), model.enunciado);
+    }catch(e){
+        console.log("Advertencia: No se ha podido actualizar el enunciado (pdf).");
+        console.log("\tSi tienes abierto el fichero Enunciado.pdf y no has cambiado tu dirección de correo en el autocorector, puedes ignorar este mensaje y continuar.");
+        console.log("\tEn caso contrario, cierra el enunciado y vuelve a lanzar el autocorector. Si sigues viendo este mensaje, ponte en contacto con los profesores.")
+    }
 
     process.env.MODEL_CONFIG = JSON.toString(model.config);
 

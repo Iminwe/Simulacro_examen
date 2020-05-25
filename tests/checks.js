@@ -229,7 +229,11 @@ Cuando preguntes en el foro, asegúrate de incluir esa información para que pod
                     await server.kill();
                     // Borrar base de datos
                     if(!DEBUG){
-                        fs.unlinkSync(db_file);
+                        try{
+                            fs.unlinkSync(db_file);
+                        }catch(e){
+                            // Ignorar el mensaje, el fichero se borra al arrancar también.
+                        }
                     }
                 }
             });
