@@ -45,5 +45,6 @@
     "serverUrl": "https://autocorector.dit.upm.es/",
     "courseId": "8249",
     "assignmentId": "83670"
-  }
+  },
+  "engines" : { "node" : "0.12" }
 }
