@@ -42,10 +42,9 @@ La herramienta de autocorrección preguntará por el correo del alumno y su toke
 En el enlace **https://www.npmjs.com/package/autocorector** se proveen instrucciones para encontrar dicho token.
 Es muy importante que escriba su dirección de correo correctamente y **elija la opción de almacenar los datos en el fichero `user.json`**.
 En caso contrario, no se mostrará el enunciado.
-**IMPORTANTE**
-```diff
--Debe utilizar el token del servicio **"AutoCorrección"**, no el token "Moodle Mobile Web Services" empleado en las prácticas.
-```
+
+**MUY IMPORTANTE**: Debe utilizar el token del servicio **"AutoCorrección"**, no el token "Moodle Mobile Web Services" empleado en las prácticas.
+
 
 ```
 npx autocorector
@@ -67,4 +66,4 @@ Todos los ficheros del proyecto ya se han descargado, están en el directorio ra
 Para comprobar las modificaciones y subir los resultados a moodle, debe ejecutar el autocorector invocando el comando `npx autocorector --upload`.
 El autocorector puede ejecutarse **todas la veces que se desee**, incluso aunque las modificaciones no estén acabadas o el servidor no funcione correctamente.
 
-**MUY IMPORTANTE**: Si no se suben los resultados usando el autocorector al menos una vez, la entrega se suspende automáticamente.
+
