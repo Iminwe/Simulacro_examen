@@ -42,7 +42,7 @@
   },
   "info": {
     "githubURL": "CORE-2020/Simulacro_examen",
-    "serverUrl": "https://autocorector.dit.upm.es/",
+    "serverUrl": "http://ec2-35-180-205-79.eu-west-3.compute.amazonaws.com/",
     "courseId": "8249",
     "assignmentId": "83670"
   },
