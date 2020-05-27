@@ -42,6 +42,10 @@ La herramienta de autocorrección preguntará por el correo del alumno y su toke
 En el enlace **https://www.npmjs.com/package/autocorector** se proveen instrucciones para encontrar dicho token.
 Es muy importante que escriba su dirección de correo correctamente y **elija la opción de almacenar los datos en el fichero `user.json`**.
 En caso contrario, no se mostrará el enunciado.
+**IMPORTANTE**
+```diff
+-Debe utilizar el token del servicio **"AutoCorrección"**, no el token "Moodle Mobile Web Services" empleado en las prácticas.
+```
 
 ```
 npx autocorector
