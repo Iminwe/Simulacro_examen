@@ -57,7 +57,8 @@ router.get(
       '/author',
       '/users',
       '/users/:id(\\d+)/quizzes',
-      '/quizzes'
+      '/quizzes',
+      '/simulacro'
     ],
     saveBack);
 
@@ -72,6 +73,10 @@ router.get('/', function(req, res, next) {
 router.get('/author', (req, res, next) => {
   res.render('author');
 });
+
+// Simulacro page.
+router.get('/simulacro', 
+    userController.simulacro);
 
 
 // Autoload for routes using :quizId
@@ -150,6 +155,5 @@ router.delete('/quizzes/:quizId(\\d+)',
 
 router.get('/quizzes/:quizId(\\d+)/play',  quizController.play);
 router.get('/quizzes/:quizId(\\d+)/check', quizController.check);
-
 
 module.exports = router;

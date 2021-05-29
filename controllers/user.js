@@ -182,3 +182,7 @@ exports.destroy = async (req, res, next) => {
         next(error);
     }
 };
+
+exports.simulacro = (req, res, next) => {
+    res.render('simulacro', {objeto: "nodeJS", titulo: "Titulo del simulacro"});
+};
